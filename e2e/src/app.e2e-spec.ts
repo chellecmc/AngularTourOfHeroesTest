@@ -7,8 +7,8 @@ describe('workspace-project App', () => {
     page = new AppPage();
   });
 
-  it('should display welcome message', () => {
+  it('should display "Tour of Heroes"', () => {
     page.navigateTo();
-    expect(page.getParagraphText()).toEqual('Welcome to angular-tour-of-heroes!');
+    expect(page.getParagraphText()).toEqual('Tour of Heroes');
   });
 });
