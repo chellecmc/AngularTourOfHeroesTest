@@ -20,5 +20,5 @@ install:
   - npm install
 
 script:
-  - npm run test
-  - npm run e2e -- --config=protractor-ci.conf.js
+  - npm run test -- --watch=false --no-progress --browsers=ChromeHeadlessCI
+  - npm run e2e -- --protractor-config=protractor-ci.conf.js
